@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#016FD3</color>
+    <color name="colorPrimaryDark">#010123</color>
+    <color name="colorAccent">#FB0512</color>
+    <color name="rojo">#F50606</color>
+    <color name="verde">#0FF307</color>
+    <color name="azul">#1860EC</color>
+    <color name="amarillo">#F3CC08</color>
+    <color name="gris">#D3CFCF</color>
+    <color name="beige">#F5C883</color>
+    <color name="violeta">#A53EC4</color>
+    <color name="cyan">#57D2F7</color>
+    <color name="negro">#000000</color>
+    <color name="azulCerebro">#016FD3</color>
+    <color name="fondoPantalla">#010123</color>
+</resources>

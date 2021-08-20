@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_resultados"
+        android:icon="@mipmap/ranking26"
+        android:title="@string/action_resultados"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preferencias"
+        android:icon="@mipmap/settings32"
+        android:title="Preferencias"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@mipmap/home26"
+        android:title="@string/action_home"
+        app:showAsAction="always" />
+
+
+
+
+
+</menu>

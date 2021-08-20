@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEmoji">
+
+    <ImageButton
+        android:id="@+id/ibEnamorado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_enamorado"
+        android:src="@drawable/boton_fragment_enamorado"
+        app:layout_constraintBottom_toTopOf="@+id/ibGuinio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <ImageButton
+        android:id="@+id/ibGuinio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_guinio"
+        android:src="@drawable/boton_fragment_guinio"
+        app:layout_constraintBottom_toTopOf="@+id/ibGuay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibEnamorado" />
+
+    <ImageButton
+        android:id="@+id/ibGuay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_guay"
+        android:src="@drawable/boton_fragment_guay"
+        app:layout_constraintBottom_toTopOf="@+id/ibLengua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibGuinio" />
+
+    <ImageButton
+        android:id="@+id/ibLengua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_lengua"
+        android:src="@drawable/boton_fragment_lengua"
+        app:layout_constraintBottom_toTopOf="@+id/ibLloron"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibGuay" />
+
+    <ImageButton
+        android:id="@+id/ibLloron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_lloron"
+        android:src="@drawable/boton_fragment_lloron"
+        app:layout_constraintBottom_toTopOf="@+id/ibEnojado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibLengua" />
+
+    <ImageButton
+        android:id="@+id/ibEnojado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_fragment_enojado"
+        android:src="@drawable/boton_fragment_enojado"
+        app:layout_constraintBottom_toTopOf="@+id/cbAciertos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibLloron" />
+
+    <CheckBox
+        android:id="@+id/cbAciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ibEnojado"
+        app:layout_constraintStart_toStartOf="@+id/ibEnojado"
+        app:layout_constraintTop_toBottomOf="@+id/ibEnojado" />
+
+</android.support.constraint.ConstraintLayout>

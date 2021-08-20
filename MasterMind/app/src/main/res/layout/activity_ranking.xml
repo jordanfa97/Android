@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRanking">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListaResultados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJugador"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_resultado" />
+
+    <TextView
+        android:id="@+id/tvJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Jugador"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuacion"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvJugador"
+        app:layout_constraintEnd_toStartOf="@+id/tvIntentos"
+        app:layout_constraintStart_toEndOf="@+id/tvJugador" />
+
+    <TextView
+        android:id="@+id/tvIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPuntuacion"
+        app:layout_constraintEnd_toStartOf="@+id/tvFecha"
+        app:layout_constraintStart_toEndOf="@+id/tvPuntuacion" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIntentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvIntentos" />
+</android.support.constraint.ConstraintLayout>

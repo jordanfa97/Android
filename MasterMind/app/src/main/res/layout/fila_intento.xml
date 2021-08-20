@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNumeroFila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ib1Fila"
+        app:layout_constraintEnd_toStartOf="@+id/ib1Fila"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ib1Fila" />
+
+    <ImageButton
+        android:id="@+id/ib1Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circulonegro32"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib2Fila"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumeroFila"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib2Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circulonegro32"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib3Fila"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib1Fila"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib3Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circulonegro32"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib4Fila"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib2Fila"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib4Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circulonegro32"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivContenedorFila"
+        app:layout_constraintStart_toEndOf="@+id/ib3Fila"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivContenedorFila"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ivfondomarron"
+        android:elevation="-1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib4Fila"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ib4Fila"
+        app:layout_constraintTop_toTopOf="@+id/ib4Fila" />
+
+    <ImageView
+        android:id="@+id/ivCirculo1Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/ivContenedorFila"
+        app:layout_constraintTop_toTopOf="@+id/ivContenedorFila"
+        app:srcCompat="@drawable/circulonegro16" />
+
+    <ImageView
+        android:id="@+id/ivCirculo2Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivContenedorFila"
+        app:layout_constraintTop_toTopOf="@+id/ivContenedorFila"
+        app:srcCompat="@drawable/circulonegro16" />
+    <ImageView
+        android:id="@+id/ivCirculo3Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivContenedorFila"
+        app:layout_constraintStart_toStartOf="@+id/ivContenedorFila"
+        app:srcCompat="@drawable/circulonegro16" />
+
+
+
+    <ImageView
+        android:id="@+id/ivCirculo4Fila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivContenedorFila"
+        app:layout_constraintEnd_toEndOf="@+id/ivContenedorFila"
+        app:srcCompat="@drawable/circulonegro16" />
+
+
+
+</android.support.constraint.ConstraintLayout>
